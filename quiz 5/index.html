@@ -11,24 +11,25 @@
     <main>
     <div>
         <h1 class="h1">Todo Box</h1>
-
-        <input type="text" class="textbox"></input>
-        <button onclick="myFunction()"><i class="fa fa-moon-o"></i></button>
+<div>
+        <input type="text" class="textbox"   placeholder="Search.." title="Type in a category"></input>
+        
+        <button onclick="myFunction()" class="moon"><i class="fa fa-moon-o"></i> </button>
+        <div class="filter-dropdown" id="todo-filter">
+            <button class="dropdown-header">
+                <span class="selected-value">ALL</span>
+                <span class="dropdown-icon">&#9662;</span>
+            </button>
+            
+            <ul class="dropdown-list">
+                    <li data-value="all">All</li>
+                    <li data-value="complete">Complete</li>
+                    <li data-value="incomplete">Incomplete</li>
+                </ul>
+            </div>
+</div>
     <img src="assets/Detective-check-footprint 1.png" alt="search note " class="img">
     <p class="paragraph">Empty ...</p>
-    <div class="filter-dropdown" id="todo-filter">
-        <button class="dropdown-header">
-            <span class="selected-value">ALL</span>
-            <span class="dropdown-icon">&#9662;</span>
-        </button>
-        
-        <ul class="dropdown-list">
-                <li data-value="all">All</li>
-                <li data-value="complete">Complete</li>
-                <li data-value="incomplete">Incomplete</li>
-            </ul>
-        </div>
-    </body>
     <div class="modal-overlay" id="modalOverlay">
         <div class="modal-card">
             <h3>NEW NOTE</h3>
@@ -46,6 +47,7 @@
         </svg>
     </button>
 </div>
+    </body>
 
 
 

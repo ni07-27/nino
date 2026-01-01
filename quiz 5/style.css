@@ -10,6 +10,7 @@ img{
     margin-right: auto;
     width: 250px;
     height: 250px;
+    
 }
 h1{
        
@@ -17,8 +18,23 @@ h1{
     font-family: Arial, sans-serif;
     font-size: 36px;
     margin: flex;
+
 }
 
+.textbox {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 body {
   padding: 25px;
   background-color: white;
@@ -31,6 +47,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 20px;
     color: #000 white;
+  border: 0;
 }
 
 .dark-mode {
@@ -46,7 +63,8 @@ body {
     border-radius: 5px;
     padding: 5px;
     text-align: center;
-    margin: auto;
+    margin: flex;
+    
 }
 :root {
   --primary: #6C63FF;
@@ -150,6 +168,9 @@ body {
   position: relative;
   width: 140px;
   font-family: 'Inter', sans-serif;
+  text-align: right center;
+  height: auto;
+
 }
 
 .dropdown-header {
@@ -165,13 +186,19 @@ body {
   cursor: pointer;
   font-weight: 600;
   font-size: 14px;
-  text-transform: uppercase;
+  text-transform: uppercase; 
+  text-align: center;
 }
 
 .filter-dropdown.open .arrow-icon {
   transform: rotate(180deg);
+  text-align: center;
 }
-
+.selected-value {
+  text-align: center;
+  margin:  auto;
+  border: none;
+}
 .dropdown-list {
   position: absolute;
   top: calc(100% + 5px);
@@ -186,10 +213,12 @@ body {
   display: none; 
   z-index: 10;
   overflow: hidden;
+  text-align: center;
 }
 
 .filter-dropdown.open .dropdown-list {
   display: block;
+  text-align: center;
 }
 
 
@@ -204,8 +233,35 @@ body {
 .dropdown-list li:hover {
   background-color: #f0f0ff; 
 }
+.fa fa-moon-o {
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    margin: auto;
+    
+}
+
+.moon{
+    color: black;
+    text-align: center;
+   
+    border: auto;
+    align-self: start;
+}
+
 @media screen and (max-width: 600px) {
   .filter-dropdown {
     width: 100%;
   }
+  .textbox {
+    width: 100%;
+  }
+  .img{
+            width: 100%;
+            height: auto;
+  }
+  .paragraph  {
+    width: 100%;
+  }
 }
+

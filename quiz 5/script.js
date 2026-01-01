@@ -1,9 +1,10 @@
-
-
-
 const modal = document.getElementById('modalOverlay');
 const openBtn = document.getElementById('openModal');
 const closeBtn = document.getElementById('closeModal');
+const dropdown = document.getElementById('todo-filter');
+const header = dropdown.querySelector('.dropdown-header');
+const listItems = dropdown.querySelectorAll('.dropdown-list li');
+const selectedValue = dropdown.querySelector('.selected-value');
 
 openBtn.addEventListener('click', () => {
   modal.style.display = 'flex';
@@ -20,10 +21,6 @@ window.addEventListener('click', (e) => {
 });
 
 
-const dropdown = document.getElementById('todo-filter');
-const header = dropdown.querySelector('.dropdown-header');
-const listItems = dropdown.querySelectorAll('.dropdown-list li');
-const selectedValue = dropdown.querySelector('.selected-value');
 
 header.addEventListener('click', () => {
   dropdown.classList.toggle('open');
@@ -48,3 +45,4 @@ function myFunction() {
   var element = document.body;
   element.classList.toggle("dark-mode");
 }
+
