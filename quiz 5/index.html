@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>todo box</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+    <div>
+        <h1 class="h1">Todo Box</h1>
+
+        <input type="text" class="textbox"></input>
+        <button onclick="myFunction()"><i class="fa fa-moon-o"></i></button>
+    <img src="assets/Detective-check-footprint 1.png" alt="search note " class="img">
+    <p class="paragraph">Empty ...</p>
+    <div class="filter-dropdown" id="todo-filter">
+        <button class="dropdown-header">
+            <span class="selected-value">ALL</span>
+            <span class="dropdown-icon">&#9662;</span>
+        </button>
+        
+        <ul class="dropdown-list">
+                <li data-value="all">All</li>
+                <li data-value="complete">Complete</li>
+                <li data-value="incomplete">Incomplete</li>
+            </ul>
+        </div>
+    </body>
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-card">
+            <h3>NEW NOTE</h3>
+            <input type="text" placeholder="Input your note..." class="modal-input">
+            
+            <div class="modal-actions">
+                <button class="btn-cancel" id="closeModal">CANCEL</button>
+                <button class="btn-apply">APPLY</button>
+            </div>
+        </div>
+    </div>
+    <button class="fab-add" id="openModal">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 5V19M5 12H19" stroke="white" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+    </button>
+</div>
+
+
+
+</main>
+
+<script src="script.js"></script>
+</html>
