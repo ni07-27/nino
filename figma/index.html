@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>into spacecraft</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo">
+            <img src="assets/shared/logo.svg" alt="logo">
+        </div>
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+        <nav class="site-nav">
+            <a href="#" data-section="home" class="nav-item active"><span>00</span> Home</a>
+            <a href="#" data-section="destination" class="nav-item"><span>01</span> Destination</a>
+            <a href="#" data-section="crew" class="nav-item"><span>02</span> Crew</a>
+            <a href="#" data-section="technology" class="nav-item"><span>03</span> Technology</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="page active 1">
+            <div class="home-content">
+                <div class="home-text">
+                    <h2>SO, YOU WANT TO TRAVEL TO</h2>
+                    <h1>SPACE</h1>
+                    <p>Let’s face it; if you want to go to space, you might as well truly go to outer space and not
+                        hover on the edge of it. Sit back and relax because we’ll give you a once-in-a-lifetime
+                        experience.</p>
+                </div>
+                <a class="explore-btn" href="#" data-section="destination">EXPLORE</a>
+            </div>
+        </section>
+        <section id="destination" class="page ">
+            <div class="section-header right">
+                <h3><span>01</span> Pick Your Destination</h3>
+            </div>
+            <div class="destination-tabs">
+                <button class="tab active" data-target="moon">Moon</button>
+                <button class="tab" data-target="mars">Mars</button>
+                <button class="tab" data-target="europa">Europa</button>
+                <button class="tab" data-target="titan">Titan</button>
+            </div>
+            <div class="destination-panels">
+                <div class="panel active 2" id="moon">
+                    <img src="assets/99d819efe6dc4aa2e49caa21e6b8957b6782f524.png" alt="Moon">
+                    <div class="panel-content right">
+                        <h1>Moon</h1>
+                        <p>See our closest neighbor. A perfect relaxing trip to enjoy the scenic views and learn about
+                            our celestial companion.</p>
+                        <div class="stats">
+                            <div>
+                                <span>Avg. Distance</span>
+                                <strong>384,400 KM</strong>
+                            </div>
+                            <div>
+                                <span>Est. Travel Time</span>
+                                <strong>3 DAYS</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel" id="mars">
+                    <img src="assets/917d829e37202cb698ac30f7657bc670d8d40b24.png" alt="Mars">
+                    <div class="panel-content right">
+                        <h1>Mars</h1>
+                        <p>Explore the red planet’s rugged landscape and towering volcanoes with guided tours and
+                            comfortable transport.</p>
+                        <div class="stats">
+                            <div>
+                                <span>Avg. Distance</span>
+                                <strong>225 MIL. KM</strong>
+                            </div>
+                            <div>
+                                <span>Est. Travel Time</span>
+                                <strong>9 MONTHS</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel" id="europa">
+                    <img src="assets/cdbec69c4d2185b7b706f3f3bd77653907ed8992.png" alt="Europa">
+                    <div class="panel-content right">
+                        <h1>Europa</h1>
+                        <p>Experience icy vistas and subsurface ocean lore. A destination for the curious mind and
+                            adventurous spirit.</p>
+                        <div class="stats">
+                            <div>
+                                <span>Avg. Distance</span>
+                                <strong>628 MIL. KM</strong>
+                            </div>
+                            <div>
+                                <span>Est. Travel Time</span>
+                                <strong>3 YEARS</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel" id="titan">
+                    <img src="assets/8abf8e2190b0cd8b7cb888d60fa8b25e7eb6bffd.png" alt="Titan">
+                    <div class="panel-content right">
+                        <h1>Titan</h1>
+                        <p>Visit dense atmospheres and methane lakes. A surreal getaway for those seeking something
+                            truly different.</p>
+                        <div class="stats">
+                            <div>
+                                <span>Avg. Distance</span>
+                                <strong>1.6 BIL. KM</strong>
+                            </div>
+                            <div>
+                                <span>Est. Travel Time</span>
+                                <strong>7 YEARS</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="crew" class="page">
+            <div class="section-header right">
+                <h3><span>02</span> Meet Your Crew</h3>
+            </div>
+            <div class="crew-slider">
+                <div class="crew-slide active right">
+                    <img src="assets/5491a7162758cfcc9631cb2a7aab38305a175cc3.png" alt="Crew Member">
+                    <div class="crew-content">
+                        <h4>Commander</h4>
+                        <h1>Douglas Hurley</h1>
+                        <p>Experienced mission leader with decades of flight time. Focused on safety and excellence.</p>
+                    </div>
+                </div>
+                <div class="crew-slide right">
+                    <img src="assets/faac71a5cafefd8ec9da8a3c007cdf435bda1002.png" alt="Crew Member">
+                    <div class="crew-content right">
+                        <h4>Mission Specialist</h4>
+                        <h1>Mark Shuttleworth</h1>
+                        <p>Entrepreneur and explorer with a passion for science and technology.</p>
+                    </div>
+                </div>
+                <div class="crew-slide right">
+                    <img src="assets/a3cf6bc67ce468ae7cb29c93f12119be200e730e.png" alt="Crew Member">
+                    <div class="crew-content right">
+                        <h4>Pilot</h4>
+                        <h1>Victor Glover</h1>
+                        <p>Tested pilot with numerous hours in advanced spacecraft systems.</p>
+                    </div>
+                </div>
+                <div class="crew-slide right active">
+                    <img src="assets/ddd377be836ce68a83aa0a237102f3978d47b3c5.png" alt="Crew Member">
+                    <div class="crew-content right">
+                        <h4>Flight Engineer</h4>
+                        <h1>Anousheh Ansari</h1>
+                        <p>Seasoned engineer ensuring smooth operations and reliable systems throughout the journey.</p>
+                    </div>
+                </div>
+                <div class="crew-dots right">
+                    <button class="dot active" data-index="0"></button>
+                    <button class="dot" data-index="1"></button>
+                    <button class="dot" data-index="2"></button>
+                    <button class="dot" data-index="3"></button>
+                </div>
+            </div>
+        </section>
+        <section id="technology" class="page">
+            <div class="section-header right">
+                <h3><span>03</span> Space Launch 101</h3>
+            </div>
+            <div class="tech-slider">
+                <div class="tech-nav">
+                    <button class="tech-dot active" data-index="0">1</button>
+                    <button class="tech-dot" data-index="1">2</button>
+                    <button class="tech-dot" data-index="2">3</button>
+                </div>
+                <div class="tech-slides">
+                    <div class="tech-slide active right">
+                        <img src="assets/50c04965350d174d7479fc4e950bbb4fbbb4b547.png" alt="Launch Vehicle">
+                        <div class="tech-content right">
+                            <h4>The Terminology…</h4>
+                            <h1>Launch Vehicle</h1>
+                            <p>A powerful rocket used to transport payloads and crew beyond Earth's atmosphere.</p>
+                        </div>
+                    </div>
+                    <div class="tech-slide right">
+                        <img src="assets/b0a333948fe27609f949248b61e17f34395c4372.png" alt="Spaceport">
+                        <div class="tech-content right">
+                            <h4>The Terminology…</h4>
+                            <h1>Spaceport</h1>
+                            <p>The hub for launches and landings, equipped with advanced facilities and control systems.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tech-slide right">
+                        <img src="assets/cd42905716a2546f209973384ec684fa459291c1.png" alt="Space Capsule">
+                        <div class="tech-content right">
+                            <h4>The Terminology…</h4>
+                            <h1>Space Capsule</h1>
+                            <p>A secure and comfortable module designed to carry crew safely through space travel.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
